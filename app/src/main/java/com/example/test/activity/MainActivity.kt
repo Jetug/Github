@@ -83,21 +83,5 @@ class MainActivity : AppCompatActivity() {
         }
 
         withContext(Main) { callback(items) }
-
-        println(items)
-        println(users)
-        println(repos)
     }
-
-    suspend fun sum(a: Int, b: Int) : Int{
-        delay(500L) // имитация продолжительной работы
-        return a + b
-    }
-
-
-
-
-//    private fun keyInput(view: View): Boolean{
-//
-//    }
 }
