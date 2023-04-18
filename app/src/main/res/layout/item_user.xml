@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/dir_thumbnail"
+        android:layout_width= "50dp"
+        android:layout_height="50dp"
+        android:gravity="top|bottom"
+        android:src="@drawable/ic_android" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/dir_thumbnail"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/dir_thumbnail"
+        android:gravity="top"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@id/dir_thumbnail"
+        android:layout_marginEnd="10dp"
+        android:gravity="top"
+        android:layout_toEndOf="@+id/name"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
